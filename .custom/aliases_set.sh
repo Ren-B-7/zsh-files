@@ -18,6 +18,7 @@ alias la="ls -Af --color=auto"
 alias ls='ls --color=auto'
 alias l='ls -CF'
 
+# colour
 alias grep='grep --color=auto'
 
 alias c="clear"
@@ -31,5 +32,5 @@ alias ...="cd ../.."
 alias ....="cd ../../.."
 alias .....="cd ../../../.."
 
-# colour
-alias cd='z'
+# trash
+alias rm="trash"

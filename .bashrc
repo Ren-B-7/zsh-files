@@ -3,7 +3,8 @@
 # If not running interactively, don't do anything
 [[ $- != *i* ]] && return
 
-REL_DIR=$(dirname "$(realpath -P '.bashrc')")
+SCRIPT_PATH=$(readlink -f "${BASH_SOURCE[0]}")
+REL_DIR=$(dirname "$SCRIPT_PATH")
 IMPORTS="$REL_DIR/.custom"
 source "$IMPORTS/start.sh"
 

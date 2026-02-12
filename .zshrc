@@ -7,7 +7,8 @@ if [[ -r "${XDG_CACHE_HOME:-$HOME/.cache}/p10k-instant-prompt-${(%):-%n}.zsh" ]]
     source "${XDG_CACHE_HOME:-$HOME/.cache}/p10k-instant-prompt-${(%):-%n}.zsh"
 fi
 
-REL_DIR=$(dirname "$(realpath -P '.zshrc')")
+SCRIPT_PATH="${${(%):-%x}:A}"
+REL_DIR=$(dirname "$SCRIPT_PATH")
 IMPORTS="$REL_DIR/.custom"
 
 [[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh

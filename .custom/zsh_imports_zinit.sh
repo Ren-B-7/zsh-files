@@ -46,3 +46,6 @@ setopt COMBINING_CHARS
 export _ZO_MAXAGE=100
 
 eval "$(zoxide init zsh)"
+
+# alias cd to z
+alias cd='z'
